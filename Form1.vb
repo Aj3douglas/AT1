@@ -12,9 +12,14 @@
         p.AddArc(New Rectangle(0, Height - 40, 40, 40), 90, 90)
         p.CloseFigure()
         Region = New Region(p)
-        New Shape(    End Sub
+    End Sub
+
 
     Private Sub BtnSquare_Click(sender As Object, e As EventArgs) Handles BtnSquare.Click, BtnCircle.Click, BtnTriangle.Click
+        Console.WriteLine(sender.Tags)
+    End Sub
 
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
+        Me.Close()
     End Sub
 End Class

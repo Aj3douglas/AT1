@@ -23,55 +23,21 @@ Partial Class FrmShapeSelect
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmShapeSelect))
-        Me.BtnSquare = New System.Windows.Forms.Button()
-        Me.BtnCircle = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.BtnTriangle = New System.Windows.Forms.Button()
+        Me.BtnExit = New System.Windows.Forms.Button()
+        Me.BtnCircle = New System.Windows.Forms.Button()
+        Me.BtnSquare = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'BtnSquare
-        '
-        Me.BtnSquare.BackColor = System.Drawing.Color.Gold
-        Me.BtnSquare.BackgroundImage = CType(resources.GetObject("BtnSquare.BackgroundImage"), System.Drawing.Image)
-        Me.BtnSquare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnSquare.FlatAppearance.BorderSize = 0
-        Me.BtnSquare.Location = New System.Drawing.Point(91, 167)
-        Me.BtnSquare.Name = "BtnSquare"
-        Me.BtnSquare.Size = New System.Drawing.Size(150, 150)
-        Me.BtnSquare.TabIndex = 0
-        Me.BtnSquare.Tag = "square"
-        Me.BtnSquare.UseVisualStyleBackColor = False
-        '
-        'BtnCircle
-        '
-        Me.BtnCircle.BackColor = System.Drawing.Color.Gold
-        Me.BtnCircle.BackgroundImage = CType(resources.GetObject("BtnCircle.BackgroundImage"), System.Drawing.Image)
-        Me.BtnCircle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnCircle.Location = New System.Drawing.Point(578, 167)
-        Me.BtnCircle.Name = "BtnCircle"
-        Me.BtnCircle.Size = New System.Drawing.Size(150, 150)
-        Me.BtnCircle.TabIndex = 2
-        Me.BtnCircle.Tag = "circle"
-        Me.BtnCircle.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(724, 534)
+        Me.Button4.Location = New System.Drawing.Point(242, 358)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(360, 81)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(724, 24)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'BtnTriangle
         '
@@ -86,6 +52,42 @@ Partial Class FrmShapeSelect
         Me.BtnTriangle.Tag = "triangle"
         Me.BtnTriangle.UseVisualStyleBackColor = False
         '
+        'BtnExit
+        '
+        Me.BtnExit.BackColor = System.Drawing.Color.Gold
+        Me.BtnExit.BackgroundImage = CType(resources.GetObject("BtnExit.BackgroundImage"), System.Drawing.Image)
+        Me.BtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnExit.Location = New System.Drawing.Point(767, 12)
+        Me.BtnExit.Name = "BtnExit"
+        Me.BtnExit.Size = New System.Drawing.Size(50, 49)
+        Me.BtnExit.TabIndex = 4
+        Me.BtnExit.UseVisualStyleBackColor = False
+        '
+        'BtnCircle
+        '
+        Me.BtnCircle.BackColor = System.Drawing.Color.Gold
+        Me.BtnCircle.BackgroundImage = CType(resources.GetObject("BtnCircle.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCircle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnCircle.Location = New System.Drawing.Point(578, 167)
+        Me.BtnCircle.Name = "BtnCircle"
+        Me.BtnCircle.Size = New System.Drawing.Size(150, 150)
+        Me.BtnCircle.TabIndex = 2
+        Me.BtnCircle.Tag = "circle"
+        Me.BtnCircle.UseVisualStyleBackColor = False
+        '
+        'BtnSquare
+        '
+        Me.BtnSquare.BackColor = System.Drawing.Color.Gold
+        Me.BtnSquare.BackgroundImage = CType(resources.GetObject("BtnSquare.BackgroundImage"), System.Drawing.Image)
+        Me.BtnSquare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnSquare.FlatAppearance.BorderSize = 0
+        Me.BtnSquare.Location = New System.Drawing.Point(91, 167)
+        Me.BtnSquare.Name = "BtnSquare"
+        Me.BtnSquare.Size = New System.Drawing.Size(150, 150)
+        Me.BtnSquare.TabIndex = 0
+        Me.BtnSquare.Tag = "square"
+        Me.BtnSquare.UseVisualStyleBackColor = False
+        '
         'FrmShapeSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -93,7 +95,7 @@ Partial Class FrmShapeSelect
         Me.BackColor = System.Drawing.Color.Gold
         Me.ClientSize = New System.Drawing.Size(829, 580)
         Me.Controls.Add(Me.BtnTriangle)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.BtnCircle)
         Me.Controls.Add(Me.BtnSquare)
@@ -106,6 +108,6 @@ Partial Class FrmShapeSelect
     Friend WithEvents BtnSquare As Button
     Friend WithEvents BtnCircle As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents BtnExit As Button
     Friend WithEvents BtnTriangle As Button
 End Class
