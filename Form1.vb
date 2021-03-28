@@ -1,4 +1,7 @@
 ﻿Public Class FrmShapeSelect
+
+    Friend SelectedShape As String
+
     Private Sub FrmShapeSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FormBorderStyle = FormBorderStyle.None
         Dim p As New Drawing2D.GraphicsPath()
@@ -16,7 +19,10 @@
 
 
     Private Sub BtnSquare_Click(sender As Object, e As EventArgs) Handles BtnSquare.Click, BtnCircle.Click, BtnTriangle.Click
-        Console.WriteLine(sender.Tags)
+        Dim Shape = sender.Name.ToString().Replace("Btn", "")
+        Me.SelectedShape = Shape
+        Me.Hide()
+        FrmCalculate.Show()
     End Sub
 
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
